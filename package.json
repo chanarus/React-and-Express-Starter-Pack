@@ -1,0 +1,28 @@
+{
+  "name": "React-and-Express-Starter-Pack",
+  "version": "1.0.0",
+  "description": "\"# React-and-Express-Starter-Pack\"",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanarus/React-and-Express-Starter-Pack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanarus/React-and-Express-Starter-Pack/issues"
+  },
+  "homepage": "https://github.com/chanarus/React-and-Express-Starter-Pack#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
