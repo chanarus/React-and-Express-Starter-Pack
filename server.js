@@ -1,17 +1,7 @@
-const express = require('express')
-const app = express()
-const port = 3010
+const http = require('http');
+const app = require('./app');
 
-app.get('/', (req, res) => res.send('Hello World!'));
+const port = process.env.PORT || 5000;
 
-app.get('/api/customers', (req, res) => {
-    const customers = [
-        {id: 1, fristname: 'Chanaru', lastname: 'Sampath'},
-        {id: 2, fristname: 'Brad', lastname: 'Pit'},
-        {id: 3, fristname: 'John', lastname: 'Wick'}
-    ];
-    res.json(customers);
-});
-
-app.listen(port, () => console.log(`Example app listening on port !${port}`));
+http.createServer(app).listen(port, () => console.log(`Server start on port ${port}`));
 
