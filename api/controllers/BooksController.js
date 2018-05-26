@@ -7,9 +7,6 @@ const books = [
 
 module.exports = {
     getAllBooks: (req, res, next) => {
-        res.json({
-            message:'All books',
-            books
-        });
+        res.json(books);
     }
 }
